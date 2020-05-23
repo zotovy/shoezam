@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ![header](github/header.jpg)
 
 # Open Source Flutter App
