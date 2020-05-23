@@ -48,5 +48,3 @@ We are an international team of developers working for our project. Want to help
 * [Flutter](flutter.dev)
 * [Firebase ML Kit](firebase.google.com/)
 * [TenserFlow](https://www.tensorflow.org/)|
-
->>>>>>> 56e140bcd6ad5689f90a956a5692c45b4ed9a268
