@@ -24,6 +24,7 @@ class _CamaraLivePreviewWidgetState extends State<CamaraLivePreviewWidget> {
       locator<ImageServices>().cameras[0],
       ResolutionPreset.medium,
     );
+
     cameraController.initialize().then((_) {
       if (!mounted) {
         return;

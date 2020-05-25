@@ -15,6 +15,8 @@ class _HomePageState extends State<HomePage> {
   // Model
   HomeViewModel _model = locator<HomeViewModel>();
 
+  bool isDark = false;
+
   List<Widget> _ui(context, HomeViewModel model) {
     return [
       CamaraLivePreviewWidget(),
@@ -32,13 +34,23 @@ class _HomePageState extends State<HomePage> {
         right: 0,
         left: 0,
         child: Center(
-          child: Container(
-            width: 300, // todo: change with adaptive value
-            height: 300,
-            decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(width: 3, color: Colors.white),
+          child: GestureDetector(
+            onTap: () => setState(() => isDark = !isDark),
+            child: Container(
+              width: 300, // todo: change with adaptive value
+              height: 300,
+              decoration: BoxDecoration(
+                color: isDark
+                    ? Colors.black.withOpacity(0.05)
+                    : Colors.white.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(
+                  width: 3,
+                  color: isDark
+                      ? Color(0xFF282828).withOpacity(0.5)
+                      : Colors.white,
+                ),
+              ),
             ),
           ),
         ),
