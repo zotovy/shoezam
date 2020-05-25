@@ -1,3 +1,8 @@
 {
-    "recognize": "Recognize!"
+    "recognize": "Recognize!",
+
+    "recognize_shoe": "Recognize shoe",
+    "news": "News",
+    "favourites": "Favourites",
+    "settings": "Settings"
 }

@@ -6,6 +6,7 @@ import 'package:shoezam/core/services/images.dart';
 import 'package:shoezam/core/utils/themes.dart';
 import 'package:shoezam/localization.dart';
 import 'package:shoezam/locator.dart';
+import 'package:shoezam/router.dart';
 import 'package:shoezam/ui/views/home.dart';
 
 void main() async {
@@ -57,6 +58,7 @@ class MainApp extends StatelessWidget {
       darkTheme: darkMode,
       themeMode: ThemeMode.light, // todo: dynamic theme
       home: HomePage(),
+      onGenerateRoute: (settings) => Router.generateRoute(settings, context),
     );
   }
 }

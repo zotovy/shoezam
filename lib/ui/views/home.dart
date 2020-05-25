@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
     ];
   }
 
-  void toggleMenu() {}
+  void toggleMenu() => Navigator.pushNamed(context, 'menu', arguments: '/');
 
   Widget buildFrameBox(BuildContext context) => Positioned(
         top: 0,
