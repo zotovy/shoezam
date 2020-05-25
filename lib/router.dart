@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shoezam/ui/views/home.dart';
 import 'package:shoezam/ui/views/menu.dart';
+import 'package:shoezam/ui/views/settings.dart';
 import 'package:shoezam/ui/widgets/page_transtion/circular_reveal_clipper.dart';
 
 class Router {
@@ -9,6 +10,8 @@ class Router {
     switch (settings.name) {
       case '/':
         return CupertinoPageRoute(builder: (_) => HomePage());
+      case 'settings':
+        return CupertinoPageRoute(builder: (_) => SettingsPage());
       case 'menu':
         return RevealRoute(
           page: MenuPage(

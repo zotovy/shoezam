@@ -1,6 +1,7 @@
 import 'package:get_it/get_it.dart';
 import 'package:shoezam/core/services/images.dart';
 import 'package:shoezam/core/viewmodels/home_model.dart';
+import 'package:shoezam/core/viewmodels/settings_model.dart';
 
 GetIt locator = GetIt.instance;
 
@@ -8,4 +9,5 @@ GetIt locator = GetIt.instance;
 void setupLocator() {
   locator.registerLazySingleton<ImageServices>(() => ImageServices());
   locator.registerLazySingleton<HomeViewModel>(() => HomeViewModel());
+  locator.registerLazySingleton<SettingsViewModel>(() => SettingsViewModel());
 }

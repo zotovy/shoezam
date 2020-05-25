@@ -4,5 +4,10 @@
     "recognize_shoe": "Recognize shoe",
     "news": "News",
     "favourites": "Favourites",
-    "settings": "Settings"
+    "settings": "Settings",
+
+    "currency:": "Currency: ",
+    "language:": "Language: ",
+    "choose_currency": "Choose Currency",
+    "choose_language": "Choose Language"
 }
